@@ -62,17 +62,28 @@
      LOGO MARK SVG
   ═══════════════════════════════════════════ */
   .logo-svg{
-    width:48px;height:48px;border-radius:14px;
-    overflow:hidden;flex-shrink:0;
-    border:2px solid rgba(27,110,243,.5);
-    box-shadow:0 4px 18px rgba(27,110,243,.25),0 0 0 1px rgba(254,44,85,.15);
-    background:#07112A;
+    width:52px;height:52px;border-radius:14px;
+    flex-shrink:0;
+    border:2px solid rgba(27,110,243,.55);
+    box-shadow:0 4px 20px rgba(27,110,243,.28),0 0 0 1px rgba(254,44,85,.12);
+    background:linear-gradient(135deg,#111F45,#1B6EF3);
+    display:flex;align-items:center;justify-content:center;
+    flex-direction:column;gap:0;
+    transition:box-shadow .3s,transform .3s;
   }
-  .logo-svg img{
-    width:100%;height:100%;object-fit:cover;object-position:center 30%;
-    display:block;transition:transform .35s;
+  .nav-logo:hover .logo-svg{
+    box-shadow:0 6px 28px rgba(27,110,243,.5);
+    transform:scale(1.06);
   }
-  .nav-logo:hover .logo-svg img{transform:scale(1.08);}
+  .logo-svg .l1{
+    font-family:var(--font-en);font-size:1.05rem;font-weight:900;
+    color:#fff;letter-spacing:-.03em;line-height:1;
+  }
+  .logo-svg .l2{
+    font-family:var(--font-en);font-size:.45rem;font-weight:700;
+    color:rgba(255,255,255,.7);letter-spacing:.1em;text-transform:uppercase;
+    line-height:1;margin-top:2px;
+  }
   .nav-logo{cursor:pointer;}
   .logo-text{font-family:var(--font-ar);font-weight:900;font-size:1.2rem;line-height:1.1;}
   .logo-text .line1{display:block;color:var(--white);}
@@ -932,7 +943,7 @@
 ════════════════════════════════════════ -->
 <nav id="nav">
   <div class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-    <div class="logo-svg"><img src="logo-main.jpg" alt="MouniR ACADEMY Logo"/></div>
+    <div class="logo-svg"><span class="l1">MA</span><span class="l2">Academy</span></div>
     <div class="logo-text">
       <span class="line1">MouniR ACADEMY</span>
       <span class="line2">Expert TikTok Maroc 🇲🇦</span>
@@ -942,7 +953,7 @@
     <li><a href="#about" data-i18n="nav.about">À propos</a></li>
     <li><a href="#services" data-i18n="nav.services">Services</a></li>
     <li><a href="#algorithm" data-i18n="nav.algorithm">Algorithme</a></li>
-    <li><a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok" style="font-size:.85rem"></i> TikTok</a></li>
+    <li><a href="https://www.tiktok.com/@mounir.lelion" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok" style="font-size:.85rem"></i> TikTok</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li>
       <a href="https://wa.me/212703175697?text=Bonjour%20MouniR%20ACADEM%C3%8E%20!" target="_blank" rel="noopener" class="btn-gold">
@@ -970,7 +981,7 @@
     <!-- Content -->
     <div>
       <div class="hero-eyebrow">
-        <span>🦁</span> <span data-i18n="hero.eyebrow">@mounirlelion — N°1 Expert TikTok Maroc 🇲🇦</span>
+        <span>🦁</span> <span data-i18n="hero.eyebrow">@mounir.lelion — N°1 Expert TikTok Maroc 🇲🇦</span>
       </div>
       <h1 class="hero-h1">
         <span class="white" data-i18n="hero.h1.line1">Maîtrise</span><br/>
@@ -987,8 +998,8 @@
         <a href="https://wa.me/212703175697?text=Bonjour%20MouniR%20ACADEM%C3%8E%20!" target="_blank" rel="noopener" class="btn-wa-big">
           <i class="fa-brands fa-whatsapp"></i> <span data-i18n="hero.btn.wa">Contacter maintenant</span>
         </a>
-        <a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener" class="btn-tt-outline">
-          <i class="fa-brands fa-tiktok"></i> @mounirlelion
+        <a href="https://www.tiktok.com/@mounir.lelion" target="_blank" rel="noopener" class="btn-tt-outline">
+          <i class="fa-brands fa-tiktok"></i> @mounir.lelion
         </a>
       </div>
       <div class="hero-nums">
@@ -1099,12 +1110,12 @@
       </div>
       <div class="about-name-plate">
         <div class="name">منير لزرق 🦁</div>
-        <div class="role">Expert TikTok N°1 Maroc • @mounirlelion</div>
+        <div class="role">Expert TikTok N°1 Maroc • @mounir.lelion</div>
       </div>
-      <a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener" class="about-tiktok-chip">
+      <a href="https://www.tiktok.com/@mounir.lelion" target="_blank" rel="noopener" class="about-tiktok-chip">
         <i class="fa-brands fa-tiktok" style="font-size:1.4rem"></i>
         <div>
-          <div style="font-size:.85rem">@mounirlelion</div>
+          <div style="font-size:.85rem">@mounir.lelion</div>
           <div style="font-size:.65rem;opacity:.7">Profil officiel TikTok</div>
         </div>
       </a>
@@ -1220,8 +1231,8 @@
         <a href="https://t.me/mounir_tiktok" target="_blank" rel="noopener" class="btn-outline-gold">
           <i class="fa-brands fa-telegram"></i> Telegram
         </a>
-        <a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener" class="btn-outline-gold">
-          <i class="fa-brands fa-tiktok"></i> @mounirlelion
+        <a href="https://www.tiktok.com/@mounir.lelion" target="_blank" rel="noopener" class="btn-outline-gold">
+          <i class="fa-brands fa-tiktok"></i> @mounir.lelion
         </a>
       </div>
 
@@ -1360,35 +1371,35 @@
 
     <!-- Video previews with real thumbnails -->
     <div class="vids-row">
-      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounirlelion','_blank')">
+      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounir.lelion','_blank')">
         <div class="vid-thumb" style="background:linear-gradient(135deg,#1a1400,#3d3000)">
           <img src="thumb3.jpg" alt="vidéo TikTok" onerror="this.style.display='none'"/>
           <div class="vid-overlay"><i class="fa-solid fa-play"></i></div>
         </div>
         <div class="vid-label" data-i18n="vid1.lbl">Algorithme TikTok ⚡</div>
       </div>
-      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounirlelion','_blank')">
+      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounir.lelion','_blank')">
         <div class="vid-thumb" style="background:linear-gradient(135deg,#1a0a00,#3d1800)">
           <img src="thumb4.jpg" alt="vidéo TikTok" onerror="this.style.display='none'"/>
           <div class="vid-overlay"><i class="fa-solid fa-play"></i></div>
         </div>
         <div class="vid-label">خوارزمية 🧠</div>
       </div>
-      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounirlelion','_blank')">
+      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounir.lelion','_blank')">
         <div class="vid-thumb" style="background:linear-gradient(135deg,#0a1a00,#182800)">
           <img src="thumb5.jpg" alt="vidéo TikTok" onerror="this.style.display='none'"/>
           <div class="vid-overlay"><i class="fa-solid fa-play"></i></div>
         </div>
         <div class="vid-label">Politique TikTok 🛡️</div>
       </div>
-      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounirlelion','_blank')">
+      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounir.lelion','_blank')">
         <div class="vid-thumb" style="background:linear-gradient(135deg,#00101a,#001a2a)">
           <img src="thumb6.jpg" alt="vidéo TikTok" onerror="this.style.display='none'"/>
           <div class="vid-overlay"><i class="fa-solid fa-play"></i></div>
         </div>
         <div class="vid-label">TikTok Beta 🔬</div>
       </div>
-      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounirlelion','_blank')">
+      <div class="vid-card" onclick="window.open('https://www.tiktok.com/@mounir.lelion','_blank')">
         <div class="vid-thumb" style="background:linear-gradient(135deg,#1a001a,#2a0030)">
           <img src="thumb7.jpg" alt="vidéo TikTok" onerror="this.style.display='none'"/>
           <div class="vid-overlay"><i class="fa-solid fa-play"></i></div>
@@ -1397,8 +1408,8 @@
       </div>
     </div>
 
-    <a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener" class="btn-gold" style="margin:0 auto;padding:16px 38px;font-size:1rem;">
-      <i class="fa-brands fa-tiktok"></i> Voir le profil @mounirlelion
+    <a href="https://www.tiktok.com/@mounir.lelion" target="_blank" rel="noopener" class="btn-gold" style="margin:0 auto;padding:16px 38px;font-size:1rem;">
+      <i class="fa-brands fa-tiktok"></i> Voir le profil @mounir.lelion
     </a>
   </div>
 </section>
@@ -1482,10 +1493,10 @@
       <h2 class="sec-h2-white" style="text-align:center" data-i18n-html="faq.h2">Questions <span class="gld">fréquentes</span></h2>
     </div>
     <div class="faq-list">
-      <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq1.q">C'est quoi l'algorithme TikTok (خوارزمية) ?</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq1.a">L'algorithme TikTok décide quelles vidéos apparaissent dans le "Pour toi" (FYP). Il analyse le taux de complétion, les partages, commentaires et replays pour décider à combien de personnes diffuser ta vidéo. Mounir explique tout ça en détail sur @mounirlelion.</div></div>
+      <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq1.q">C'est quoi l'algorithme TikTok (خوارزمية) ?</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq1.a">L'algorithme TikTok décide quelles vidéos apparaissent dans le "Pour toi" (FYP). Il analyse le taux de complétion, les partages, commentaires et replays pour décider à combien de personnes diffuser ta vidéo. Mounir explique tout ça en détail sur @mounir.lelion.</div></div>
       <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq2.q">Mon compte TikTok est limité (shadowban) — que faire ?</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq2.a">Un compte limité est souvent dû à une violation non intentionnelle des règles TikTok. Mounir propose un audit complet de ton compte pour identifier le problème et te donner les étapes précises pour le corriger. Contacte-le sur WhatsApp : +212 703 175 697.</div></div>
-      <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq3.q">شنو هو TikTok Beta وكيفاش نستافاد منو؟</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq3.a">TikTok Beta هي نسخة تجريبية تحتوي على مميزات جديدة قبل إطلاقها للعموم. منير يشرح كيفية الوصول إليها والاستفادة من هذه المميزات قبل المنافسين. تابعه على @mounirlelion.</div></div>
-      <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq4.q">Comment contacter Mounir pour un audit ou consultation ?</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq4.a">Le moyen le plus rapide : WhatsApp au +212 703 175 697. Décris ton besoin (audit, stratégie, question politique TikTok) et Mounir te répondra rapidement. Suis aussi @mounirlelion pour du contenu éducatif quotidien gratuit.</div></div>
+      <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq3.q">شنو هو TikTok Beta وكيفاش نستافاد منو؟</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq3.a">TikTok Beta هي نسخة تجريبية تحتوي على مميزات جديدة قبل إطلاقها للعموم. منير يشرح كيفية الوصول إليها والاستفادة من هذه المميزات قبل المنافسين. تابعه على @mounir.lelion.</div></div>
+      <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq4.q">Comment contacter Mounir pour un audit ou consultation ?</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq4.a">Le moyen le plus rapide : WhatsApp au +212 703 175 697. Décris ton besoin (audit, stratégie, question politique TikTok) et Mounir te répondra rapidement. Suis aussi @mounir.lelion pour du contenu éducatif quotidien gratuit.</div></div>
       <div class="fq"><div class="fq-q" onclick="toggleFaq(this)"><span data-i18n="faq5.q">Est-ce adapté aux entreprises marocaines ?</span><div class="fq-ic"><i class="fa-solid fa-plus"></i></div></div><div class="fq-a" data-i18n="faq5.a">Absolument ! TikTok a 12,4 millions d'utilisateurs au Maroc. Mounir aide entrepreneurs et commerçants à créer une stratégie TikTok adaptée au marché local, au public marocain et aux tendances du moment.</div></div>
     </div>
   </div>
@@ -1499,7 +1510,7 @@
     <div class="big-logo" style="font-size:3.5rem;animation:logoPls 2.5s ease-in-out infinite;display:inline-block;margin-bottom:12px;">🦁🎵</div>
     <h2 class="cta-h2" data-i18n-html="cta.h2">Prêt à dominer<br/>TikTok au Maroc ?</h2>
     <p class="cta-sub" data-i18n="cta.p">Rejoins des milliers de Marocains qui maîtrisent TikTok grâce à MouniR ACADEMY.</p>
-    <p class="cta-ar" data-i18n="cta.ar">هل أنت مستعد؟ تواصل مع منير الآن عبر واتساب أو تابعه على تيك توك @mounirlelion 🦁🇲🇦</p>
+    <p class="cta-ar" data-i18n="cta.ar">هل أنت مستعد؟ تواصل مع منير الآن عبر واتساب أو تابعه على تيك توك @mounir.lelion 🦁🇲🇦</p>
     <div class="cta-phone"><i class="fa-brands fa-whatsapp"></i> +212 703 175 697</div>
     <div class="cta-btns">
       <a href="https://wa.me/212703175697?text=Bonjour%20MouniR%20ACADEM%C3%8E%20!" target="_blank" rel="noopener" class="btn-black">
@@ -1508,8 +1519,8 @@
       <a href="https://t.me/mounir_tiktok" target="_blank" rel="noopener" class="btn-black">
         <i class="fa-brands fa-telegram"></i> <span data-i18n="cta.btn.tg">Rejoindre sur Telegram</span>
       </a>
-      <a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener" class="btn-white">
-        <i class="fa-brands fa-tiktok"></i> <span data-i18n="cta.btn.tt">Suivre @mounirlelion</span>
+      <a href="https://www.tiktok.com/@mounir.lelion" target="_blank" rel="noopener" class="btn-white">
+        <i class="fa-brands fa-tiktok"></i> <span data-i18n="cta.btn.tt">Suivre @mounir.lelion</span>
       </a>
     </div>
   </div>
@@ -1522,7 +1533,7 @@
   <div class="foot-grid">
     <div>
       <div class="f-logo">
-        <div class="logo-svg"><img src="logo-main.jpg" alt="MouniR ACADEMY Logo"/></div>
+        <div class="logo-svg"><span class="l1">MA</span><span class="l2">Academy</span></div>
         <div class="logo-text">
           <span class="line1">MouniR ACADEMY</span>
           <span class="line2">Expert TikTok Maroc 🇲🇦</span>
@@ -1530,7 +1541,7 @@
       </div>
       <p class="f-about" data-i18n="foot.about">L'expert TikTok N°1 au Maroc. Algorithme, politique, audit de compte et création de contenu viral — pour les créateurs marocains.</p>
       <div class="f-socs">
-        <a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener" class="fsoc"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.tiktok.com/@mounir.lelion" target="_blank" rel="noopener" class="fsoc"><i class="fa-brands fa-tiktok"></i></a>
         <a href="https://wa.me/212703175697" target="_blank" rel="noopener" class="fsoc"><i class="fa-brands fa-whatsapp"></i></a>
         <a href="https://t.me/mounir_tiktok" target="_blank" rel="noopener" class="fsoc"><i class="fa-brands fa-telegram"></i></a>
         <a href="#" class="fsoc"><i class="fa-brands fa-instagram"></i></a>
@@ -1562,7 +1573,7 @@
       <ul>
         <li><a href="https://wa.me/212703175697"><i class="fa-brands fa-whatsapp"></i> +212 703 175 697</a></li>
         <li><a href="https://t.me/mounir_tiktok" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
-        <li><a href="https://www.tiktok.com/@mounirlelion"><i class="fa-brands fa-tiktok"></i> @mounirlelion</a></li>
+        <li><a href="https://www.tiktok.com/@mounir.lelion"><i class="fa-brands fa-tiktok"></i> @mounir.lelion</a></li>
         <li><a href="#"><i class="fa-solid fa-location-dot"></i> Maroc 🇲🇦</a></li>
       </ul>
     </div>
@@ -1650,7 +1661,7 @@ function toggleFaq(el){
 const T={
   fr:{
     'nav.about':'À propos','nav.services':'Services','nav.algorithm':'Algorithme',
-    'hero.eyebrow':'@mounirlelion — N°1 Expert TikTok Maroc 🇲🇦',
+    'hero.eyebrow':'@mounir.lelion — N°1 Expert TikTok Maroc 🇲🇦',
     'hero.h1.line1':'Maîtrise','hero.h1.line2':'comme un Pro',
     'hero.h1.sub':'أكاديمية منير — خبير تيك توك المغرب | خوارزمية · سياسة · محتوى',
     'hero.p':'Découvrez les <strong>stratégies TikTok efficaces</strong> pour les créateurs débutants et avancés. Maîtrisez l\'<strong>algorithme خوارزمية</strong>, la politique de la plateforme et boostez votre contenu — en darija &amp; français. 🇲🇦',
@@ -1690,21 +1701,21 @@ const T={
     'vid1.lbl':'Algorithme TikTok ⚡',
     'testi.h2':'Ils ont <span class="gld">maîtrisé TikTok</span><br/>grâce à Mounir 🦁',
     'faq.h2':'Questions <span class="gld">fréquentes</span>',
-    'faq1.q':'C\'est quoi l\'algorithme TikTok (خوارزمية) ?','faq1.a':'L\'algorithme TikTok décide quelles vidéos apparaissent dans le "Pour toi" (FYP). Il analyse le taux de complétion, les partages, commentaires et replays pour décider à combien de personnes diffuser ta vidéo. Mounir explique tout ça en détail sur @mounirlelion.',
+    'faq1.q':'C\'est quoi l\'algorithme TikTok (خوارزمية) ?','faq1.a':'L\'algorithme TikTok décide quelles vidéos apparaissent dans le "Pour toi" (FYP). Il analyse le taux de complétion, les partages, commentaires et replays pour décider à combien de personnes diffuser ta vidéo. Mounir explique tout ça en détail sur @mounir.lelion.',
     'faq2.q':'Mon compte TikTok est limité (shadowban) — que faire ?','faq2.a':'Un compte limité est souvent dû à une violation non intentionnelle des règles TikTok. Mounir propose un audit complet de ton compte pour identifier le problème et te donner les étapes précises pour le corriger. Contacte-le sur WhatsApp : +212 703 175 697.',
-    'faq3.q':'شنو هو TikTok Beta وكيفاش نستافاد منو؟','faq3.a':'TikTok Beta هي نسخة تجريبية تحتوي على مميزات جديدة قبل إطلاقها للعموم. منير يشرح كيفية الوصول إليها والاستفادة من هذه المميزات قبل المنافسين. تابعه على @mounirlelion.',
-    'faq4.q':'Comment contacter Mounir pour un audit ou consultation ?','faq4.a':'Le moyen le plus rapide : WhatsApp au +212 703 175 697. Décris ton besoin (audit, stratégie, question politique TikTok) et Mounir te répondra rapidement. Suis aussi @mounirlelion pour du contenu éducatif quotidien gratuit.',
+    'faq3.q':'شنو هو TikTok Beta وكيفاش نستافاد منو؟','faq3.a':'TikTok Beta هي نسخة تجريبية تحتوي على مميزات جديدة قبل إطلاقها للعموم. منير يشرح كيفية الوصول إليها والاستفادة من هذه المميزات قبل المنافسين. تابعه على @mounir.lelion.',
+    'faq4.q':'Comment contacter Mounir pour un audit ou consultation ?','faq4.a':'Le moyen le plus rapide : WhatsApp au +212 703 175 697. Décris ton besoin (audit, stratégie, question politique TikTok) et Mounir te répondra rapidement. Suis aussi @mounir.lelion pour du contenu éducatif quotidien gratuit.',
     'faq5.q':'Est-ce adapté aux entreprises marocaines ?','faq5.a':'Absolument ! TikTok a 12,4 millions d\'utilisateurs au Maroc. Mounir aide entrepreneurs et commerçants à créer une stratégie TikTok adaptée au marché local, au public marocain et aux tendances du moment.',
     'cta.h2':'Prêt à dominer<br/>TikTok au Maroc ?',
     'cta.p':'Rejoins des milliers de Marocains qui maîtrisent TikTok grâce à MouniR ACADEMY.',
-    'cta.ar':'هل أنت مستعد؟ تواصل مع منير الآن عبر واتساب أو تابعه على تيك توك @mounirlelion 🦁🇲🇦',
-    'cta.btn.wa':'Envoyer un message WhatsApp','cta.btn.tg':'Rejoindre sur Telegram','cta.btn.tt':'Suivre @mounirlelion',
+    'cta.ar':'هل أنت مستعد؟ تواصل مع منير الآن عبر واتساب أو تابعه على تيك توك @mounir.lelion 🦁🇲🇦',
+    'cta.btn.wa':'Envoyer un message WhatsApp','cta.btn.tg':'Rejoindre sur Telegram','cta.btn.tt':'Suivre @mounir.lelion',
     'foot.about':'L\'expert TikTok N°1 au Maroc. Algorithme, politique, audit de compte et création de contenu viral — pour les créateurs marocains.',
     'foot.copy':'© 2025 <span class="gld">MouniR ACADEMY</span> 🦁 — Tous droits réservés. Conçu avec ❤️ pour les créateurs marocains.'
   },
   en:{
     'nav.about':'About','nav.services':'Services','nav.algorithm':'Algorithm',
-    'hero.eyebrow':'@mounirlelion — N°1 TikTok Expert Morocco 🇲🇦',
+    'hero.eyebrow':'@mounir.lelion — N°1 TikTok Expert Morocco 🇲🇦',
     'hero.h1.line1':'Master','hero.h1.line2':'like a Pro',
     'hero.h1.sub':'Mounir Academy — TikTok Expert Morocco | Algorithm · Policy · Content',
     'hero.p':'Discover <strong>effective TikTok strategies</strong> for beginner and advanced creators. Master the <strong>algorithm</strong>, platform policy and boost your content — in darija & French. 🇲🇦',
@@ -1744,21 +1755,21 @@ const T={
     'vid1.lbl':'TikTok Algorithm ⚡',
     'testi.h2':'They <span class="gld">mastered TikTok</span><br/>thanks to Mounir 🦁',
     'faq.h2':'Frequently <span class="gld">asked questions</span>',
-    'faq1.q':'What is the TikTok algorithm?','faq1.a':'The TikTok algorithm decides which videos appear on the "For You" page (FYP). It analyzes completion rate, shares, comments and replays to decide how many people to show your video to. Mounir explains all this in detail on @mounirlelion.',
+    'faq1.q':'What is the TikTok algorithm?','faq1.a':'The TikTok algorithm decides which videos appear on the "For You" page (FYP). It analyzes completion rate, shares, comments and replays to decide how many people to show your video to. Mounir explains all this in detail on @mounir.lelion.',
     'faq2.q':'My TikTok account is limited (shadowban) — what to do?','faq2.a':'A limited account is often due to an unintentional violation of TikTok rules. Mounir offers a complete account audit to identify the problem and give you precise steps to fix it. Contact him on WhatsApp: +212 703 175 697.',
-    'faq3.q':'What is TikTok Beta and how can I benefit?','faq3.a':'TikTok Beta is a test version with new features before public release. Mounir explains how to access it and benefit from these features before competitors. Follow him at @mounirlelion.',
-    'faq4.q':'How to contact Mounir for an audit or consultation?','faq4.a':'Fastest way: WhatsApp at +212 703 175 697. Describe your need (audit, strategy, TikTok policy question) and Mounir will respond quickly. Also follow @mounirlelion for free daily educational content.',
+    'faq3.q':'What is TikTok Beta and how can I benefit?','faq3.a':'TikTok Beta is a test version with new features before public release. Mounir explains how to access it and benefit from these features before competitors. Follow him at @mounir.lelion.',
+    'faq4.q':'How to contact Mounir for an audit or consultation?','faq4.a':'Fastest way: WhatsApp at +212 703 175 697. Describe your need (audit, strategy, TikTok policy question) and Mounir will respond quickly. Also follow @mounir.lelion for free daily educational content.',
     'faq5.q':'Is it suitable for Moroccan businesses?','faq5.a':'Absolutely! TikTok has 12.4 million users in Morocco. Mounir helps entrepreneurs and merchants create a TikTok strategy adapted to the local market, Moroccan audience and current trends.',
     'cta.h2':'Ready to dominate<br/>TikTok in Morocco?',
     'cta.p':'Join thousands of Moroccans mastering TikTok thanks to MouniR ACADEMY.',
-    'cta.ar':'Are you ready? Contact Mounir now via WhatsApp or follow him on TikTok @mounirlelion 🦁🇲🇦',
-    'cta.btn.wa':'Send a WhatsApp message','cta.btn.tg':'Join on Telegram','cta.btn.tt':'Follow @mounirlelion',
+    'cta.ar':'Are you ready? Contact Mounir now via WhatsApp or follow him on TikTok @mounir.lelion 🦁🇲🇦',
+    'cta.btn.wa':'Send a WhatsApp message','cta.btn.tg':'Join on Telegram','cta.btn.tt':'Follow @mounir.lelion',
     'foot.about':'The N°1 TikTok expert in Morocco. Algorithm, policy, account audit and viral content creation — for Moroccan creators.',
     'foot.copy':'© 2025 <span class="gld">MouniR ACADEMY</span> 🦁 — All rights reserved. Designed with ❤️ for Moroccan creators.'
   },
   ar:{
     'nav.about':'من نحن','nav.services':'الخدمات','nav.algorithm':'الخوارزمية',
-    'hero.eyebrow':'@mounirlelion — خبير تيك توك الأول في المغرب 🇲🇦',
+    'hero.eyebrow':'@mounir.lelion — خبير تيك توك الأول في المغرب 🇲🇦',
     'hero.h1.line1':'أتقن','hero.h1.line2':'كالمحترفين',
     'hero.h1.sub':'أكاديمية منير — خبير تيك توك المغرب | خوارزمية · سياسة · محتوى',
     'hero.p':'اكتشف <strong>استراتيجيات تيك توك الفعّالة</strong> للمبتدئين والمحترفين. أتقن <strong>الخوارزمية</strong> وسياسة المنصة وعزّز محتواك — بالدارجة والفرنسية. 🇲🇦',
@@ -1798,15 +1809,15 @@ const T={
     'vid1.lbl':'خوارزمية تيك توك ⚡',
     'testi.h2':'أتقنوا <span class="gld">تيك توك</span><br/>بفضل منير 🦁',
     'faq.h2':'الأسئلة <span class="gld">المتكررة</span>',
-    'faq1.q':'ما هي خوارزمية تيك توك؟','faq1.a':'خوارزمية تيك توك تقرر أي الفيديوهات تظهر في صفحة "من أجلك". تحلل معدل الإكمال والمشاركات والتعليقات وإعادة المشاهدة لتقرر لكم شخص تعرض فيديوك. منير يشرح كل هذا بالتفصيل على @mounirlelion.',
+    'faq1.q':'ما هي خوارزمية تيك توك؟','faq1.a':'خوارزمية تيك توك تقرر أي الفيديوهات تظهر في صفحة "من أجلك". تحلل معدل الإكمال والمشاركات والتعليقات وإعادة المشاهدة لتقرر لكم شخص تعرض فيديوك. منير يشرح كل هذا بالتفصيل على @mounir.lelion.',
     'faq2.q':'حسابي على تيك توك محدود (shadowban) — ماذا أفعل؟','faq2.a':'الحساب المحدود غالباً بسبب انتهاك غير مقصود لقواعد تيك توك. منير يقدم تدقيقاً كاملاً لحسابك لتحديد المشكلة ومنحك خطوات دقيقة لإصلاحها. تواصل معه عبر واتساب: +212 703 175 697.',
-    'faq3.q':'ما هو تيك توك بيتا وكيف أستفيد منه؟','faq3.a':'تيك توك بيتا نسخة تجريبية تحتوي على ميزات جديدة قبل إطلاقها للعموم. منير يشرح كيفية الوصول إليها والاستفادة منها قبل المنافسين. تابعه على @mounirlelion.',
-    'faq4.q':'كيف أتواصل مع منير للحصول على تدقيق أو استشارة؟','faq4.a':'الطريقة الأسرع: واتساب على +212 703 175 697. اشرح احتياجك وسيرد منير بسرعة. تابع أيضاً @mounirlelion للمحتوى التعليمي المجاني اليومي.',
+    'faq3.q':'ما هو تيك توك بيتا وكيف أستفيد منه؟','faq3.a':'تيك توك بيتا نسخة تجريبية تحتوي على ميزات جديدة قبل إطلاقها للعموم. منير يشرح كيفية الوصول إليها والاستفادة منها قبل المنافسين. تابعه على @mounir.lelion.',
+    'faq4.q':'كيف أتواصل مع منير للحصول على تدقيق أو استشارة؟','faq4.a':'الطريقة الأسرع: واتساب على +212 703 175 697. اشرح احتياجك وسيرد منير بسرعة. تابع أيضاً @mounir.lelion للمحتوى التعليمي المجاني اليومي.',
     'faq5.q':'هل يناسب الشركات المغربية؟','faq5.a':'بالتأكيد! تيك توك لديه 12.4 مليون مستخدم في المغرب. منير يساعد رواد الأعمال والتجار على إنشاء استراتيجية تيك توك مكيّفة مع السوق المحلية والجمهور المغربي.',
     'cta.h2':'هل أنت مستعد للسيطرة<br/>على تيك توك في المغرب؟',
     'cta.p':'انضم إلى آلاف المغاربة الذين يتقنون تيك توك بفضل منير أكاديمي.',
-    'cta.ar':'هل أنت مستعد؟ تواصل مع منير الآن عبر واتساب أو تابعه على تيك توك @mounirlelion 🦁🇲🇦',
-    'cta.btn.wa':'إرسال رسالة واتساب','cta.btn.tg':'الانضمام على تيليغرام','cta.btn.tt':'متابعة @mounirlelion',
+    'cta.ar':'هل أنت مستعد؟ تواصل مع منير الآن عبر واتساب أو تابعه على تيك توك @mounir.lelion 🦁🇲🇦',
+    'cta.btn.wa':'إرسال رسالة واتساب','cta.btn.tg':'الانضمام على تيليغرام','cta.btn.tt':'متابعة @mounir.lelion',
     'foot.about':'خبير تيك توك الأول في المغرب. الخوارزمية والسياسة وتدقيق الحسابات وإنشاء المحتوى الفيروسي — للمبدعين المغاربة.',
     'foot.copy':'© 2025 <span class="gld">منير أكاديمي</span> 🦁 — جميع الحقوق محفوظة. صُمم بـ❤️ للمبدعين المغاربة.'
   }
