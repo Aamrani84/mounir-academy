@@ -828,6 +828,85 @@
   .community-banner-text span{color:var(--gold);}
 
   /* ═══════════════════════════════════════════
+     CV-STYLE ABOUT SECTION
+  ═══════════════════════════════════════════ */
+  .cv-tag{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(27,110,243,.08);border:1px solid rgba(27,110,243,.28);
+    color:var(--gold);font-size:.7rem;font-weight:700;
+    letter-spacing:2.5px;text-transform:uppercase;
+    padding:6px 18px;border-radius:50px;margin-bottom:22px;
+  }
+  .cv-name-heading{margin-bottom:8px;}
+  .cv-arabic-name{
+    display:block;font-family:var(--font-ar);
+    font-size:clamp(2rem,3.5vw,2.8rem);font-weight:900;
+    color:var(--text-dark);letter-spacing:-.02em;line-height:1.1;
+    direction:rtl;
+  }
+  .cv-latin-name{
+    display:block;font-size:.9rem;font-weight:600;
+    color:var(--text-light);letter-spacing:.1em;
+    text-transform:uppercase;margin-top:6px;
+  }
+  .cv-title-bar{
+    display:flex;align-items:center;gap:10px;
+    flex-wrap:wrap;margin-bottom:20px;
+  }
+  .cv-title-item{
+    font-size:.82rem;font-weight:700;color:var(--text-cream);
+    display:flex;align-items:center;gap:5px;
+  }
+  .cv-title-item i{color:var(--gold);font-size:.8rem;}
+  .cv-dot{color:var(--gold);font-weight:900;font-size:1rem;}
+  .cv-divider{
+    height:1px;
+    background:linear-gradient(90deg,transparent,var(--gold),rgba(27,110,243,.3),transparent);
+    margin:18px 0;opacity:.6;
+  }
+  .cv-stats-row{display:flex;gap:0;margin:4px 0 4px;}
+  .cv-stat{
+    display:flex;flex-direction:column;flex:1;
+    padding:0 20px 0 0;border-right:1px solid var(--cream2);
+  }
+  .cv-stat:first-child{padding-left:0;}
+  .cv-stat:last-child{border-right:none;}
+  .cv-stat-n{
+    font-family:var(--font-ar);font-size:1.9rem;font-weight:900;
+    background:linear-gradient(90deg,var(--gold),var(--gold2));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    line-height:1;
+  }
+  .cv-stat-l{
+    font-size:.68rem;color:var(--text-light);margin-top:5px;
+    font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  }
+  .cv-section-label{
+    font-size:.68rem;font-weight:800;text-transform:uppercase;
+    letter-spacing:2.5px;color:var(--gold3);
+    margin-bottom:10px;display:flex;align-items:center;gap:8px;
+  }
+  .cv-section-label::before{
+    content:'';width:16px;height:2px;
+    background:var(--gold3);border-radius:2px;display:inline-block;flex-shrink:0;
+  }
+  .cv-bio-text{
+    font-size:.98rem;color:var(--text-cream);line-height:2;
+    letter-spacing:.012em;font-family:var(--font-ar);
+    direction:rtl;text-align:right;margin-bottom:16px;
+  }
+  .cv-achievement{
+    display:flex;align-items:center;gap:14px;
+    background:linear-gradient(135deg,rgba(27,110,243,.05),rgba(254,44,85,.04));
+    border:1px solid rgba(27,110,243,.18);
+    border-left:3px solid var(--gold);
+    border-radius:12px;padding:13px 16px;margin-bottom:6px;
+  }
+  .cv-achievement i{font-size:1.4rem;color:var(--gold3);flex-shrink:0;}
+  .cv-ach-title{font-size:.88rem;font-weight:800;color:var(--text-dark);font-family:var(--font-ar);}
+  .cv-ach-sub{font-size:.7rem;color:var(--text-light);margin-top:2px;letter-spacing:.03em;}
+
+  /* ═══════════════════════════════════════════
      ABOUT PHOTO — LANDSCAPE FIT FOR STUDIO IMG
   ═══════════════════════════════════════════ */
   .about-photo-frame.studio-frame{
@@ -1019,7 +1098,7 @@
         <img src="tiktok-studio.jpeg" alt="MouniR ACADEMY — Studio TikTok Professionnel"/>
       </div>
       <div class="about-name-plate">
-        <div class="name">Mounir Lazrak 🦁</div>
+        <div class="name">منير لزرق 🦁</div>
         <div class="role">Expert TikTok N°1 Maroc • @mounirlelion</div>
       </div>
       <div class="about-tiktok-chip">
@@ -1042,46 +1121,99 @@
       </div>
     </div>
 
-    <!-- Text -->
+    <!-- Text — CV Professional Layout -->
     <div class="about-text-col" data-aos="fade-left">
-      <div class="sec-eyebrow" data-i18n="about.eyebrow">À propos de Mounir</div>
-      <h2 class="sec-h2" data-i18n-html="about.h2">
-        <span class="gld">Mounir Lazrak</span> — L'expert qui<br/>démystifie TikTok au Maroc 🇲🇦
-      </h2>
-      <p class="sec-p" data-i18n-html="about.p1">
-        MouniR ACADEMY est la référence N°1 au Maroc pour comprendre et maîtriser TikTok.
-        Avec <strong>139K abonnés</strong>, <strong>8.6M vues</strong> et <strong>250K j'aime en 60 jours</strong>,
-        Mounir Lazrak explique chaque semaine comment fonctionne la plateforme : algorithme, politique, stratégie et contenu viral.
-        🏆 Lauréat du <strong>TikTok Live Fest</strong> — 1ère place au Maroc.
-      </p>
-      <p class="sec-p" style="margin-top:10px;direction:rtl;font-family:'Cairo',sans-serif;text-align:right;">
-        منير أكاديمي — شرح تيك توك للمبتدئين: خوارزمية، سياسة المنصة، إنشاء المحتوى واستراتيجيات النمو. 🇲🇦🦁
+
+      <!-- CV Tag -->
+      <div class="cv-tag">الملف المهني &nbsp;·&nbsp; Profil Professionnel</div>
+
+      <!-- Name Block -->
+      <div class="cv-name-heading">
+        <span class="cv-arabic-name">منير لزرق</span>
+        <span class="cv-latin-name">Mounir Lazrak</span>
+      </div>
+
+      <!-- Title Bar -->
+      <div class="cv-title-bar">
+        <span class="cv-title-item"><i class="fa-brands fa-tiktok"></i> خبير تيك توك</span>
+        <span class="cv-dot">·</span>
+        <span class="cv-title-item">المغرب N°1 🇲🇦</span>
+        <span class="cv-dot">·</span>
+        <span class="cv-title-item"><i class="fa-solid fa-at"></i> mounirlelion</span>
+      </div>
+
+      <div class="cv-divider"></div>
+
+      <!-- Key Metrics -->
+      <div class="cv-stats-row">
+        <div class="cv-stat">
+          <span class="cv-stat-n">139K+</span>
+          <span class="cv-stat-l">متابع · Abonnés</span>
+        </div>
+        <div class="cv-stat">
+          <span class="cv-stat-n">8.6M+</span>
+          <span class="cv-stat-l">مشاهدة · Vues</span>
+        </div>
+        <div class="cv-stat">
+          <span class="cv-stat-n">82K+</span>
+          <span class="cv-stat-l">مشاركة · Partages</span>
+        </div>
+      </div>
+
+      <div class="cv-divider"></div>
+
+      <!-- Bio -->
+      <div class="cv-section-label">نبذة مهنية · Profil</div>
+      <p class="cv-bio-text">
+        منير لزرق هو المرجع الأول في المغرب لفهم منصة تيك توك. يقدم أسبوعياً محتوى تعليمياً متخصصاً في خوارزميات المنصة، سياساتها، استراتيجيات النمو وإنشاء المحتوى الفيروسي — بأسلوب مبسط وعملي بالدارجة المغربية والفرنسية.
       </p>
 
+      <!-- Achievement -->
+      <div class="cv-section-label">الإنجازات · Réalisations</div>
+      <div class="cv-achievement">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <div class="cv-ach-title">الفائز الأول — TikTok Live Fest 🏆</div>
+          <div class="cv-ach-sub">المركز الأول على مستوى المغرب · 1ère place au Maroc 🇲🇦</div>
+        </div>
+      </div>
+      <div class="cv-achievement" style="margin-top:8px;">
+        <i class="fa-solid fa-chart-line"></i>
+        <div>
+          <div class="cv-ach-title">250K+ إعجاب · 82K+ مشاركة في 60 يوماً</div>
+          <div class="cv-ach-sub">نمو عضوي حقيقي بدون إعلانات مدفوعة</div>
+        </div>
+      </div>
+
+      <div class="cv-divider"></div>
+
+      <!-- Expertise Grid -->
+      <div class="cv-section-label">مجالات التخصص · Expertises</div>
       <div class="about-grid-mini">
         <div class="agm" data-aos="fade-up" data-aos-delay="0">
           <div class="ic">🧠</div>
           <h4 data-i18n="about.card1.h">خوارزمية TikTok</h4>
-          <p data-i18n="about.card1.p">Comprendre l'algorithme pour dominer le FYP.</p>
+          <p data-i18n="about.card1.p">فهم الخوارزمية والهيمنة على صفحة "لك".</p>
         </div>
         <div class="agm" data-aos="fade-up" data-aos-delay="80">
           <div class="ic">🛡️</div>
-          <h4 data-i18n="about.card2.h">Politique TikTok</h4>
-          <p data-i18n="about.card2.p">Éviter les bans et comprendre les règles.</p>
+          <h4 data-i18n="about.card2.h">سياسة المنصة</h4>
+          <p data-i18n="about.card2.p">تجنب الحظر وحماية الحساب وفق القواعد.</p>
         </div>
         <div class="agm" data-aos="fade-up" data-aos-delay="160">
           <div class="ic">🔍</div>
-          <h4 data-i18n="about.card3.h">Audit de Compte</h4>
-          <p data-i18n="about.card3.p">Diagnostic et correction de ton profil TikTok.</p>
+          <h4 data-i18n="about.card3.h">تدقيق الحساب</h4>
+          <p data-i18n="about.card3.p">تشخيص شامل وخطة تصحيح دقيقة لحسابك.</p>
         </div>
         <div class="agm" data-aos="fade-up" data-aos-delay="240">
           <div class="ic">✨</div>
-          <h4 data-i18n="about.card4.h">Contenu Viral</h4>
-          <p data-i18n="about.card4.p">Stratégies pour créer du contenu qui cartonne.</p>
+          <h4 data-i18n="about.card4.h">المحتوى الفيروسي</h4>
+          <p data-i18n="about.card4.p">استراتيجيات الـ Hook والمونتاج والانتشار.</p>
         </div>
       </div>
 
-      <div class="about-cta-row">
+      <!-- Contact CTA -->
+      <div class="about-cta-row" style="margin-top:28px;">
         <a href="https://wa.me/212703175697" target="_blank" rel="noopener" class="btn-dark">
           <i class="fa-brands fa-whatsapp"></i> +212 703 175 697
         </a>
@@ -1089,9 +1221,10 @@
           <i class="fa-brands fa-telegram"></i> Telegram
         </a>
         <a href="https://www.tiktok.com/@mounirlelion" target="_blank" rel="noopener" class="btn-outline-gold">
-          <i class="fa-brands fa-tiktok"></i> Voir le TikTok
+          <i class="fa-brands fa-tiktok"></i> @mounirlelion
         </a>
       </div>
+
     </div>
   </div>
 </section>
